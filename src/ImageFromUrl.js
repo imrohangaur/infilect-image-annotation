@@ -19,7 +19,7 @@ const ImageFromUrl = ({
         const onImgLoad = () => {
             setImage(imageToLoad);
             setCanvasMeasures({
-                width: window.innerWidth * 0.9,
+                width: window.innerWidth * 0.7,
                 height: window.innerHeight * 0.85
             });
         }
@@ -38,7 +38,7 @@ const ImageFromUrl = ({
             onMouseMove={onMouseMove}
             onMouseUp={onMouseUp}
             height={window.innerHeight}
-            width={window.innerWidth}
+            width={window.innerWidth * 0.7}
         />
     );
 };

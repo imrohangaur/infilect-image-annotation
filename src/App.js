@@ -162,8 +162,8 @@ function App() {
         </Layer>
       </Stage>
       <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', width: '50%', flexWrap: 'wrap' }}>
-        <button id="btn" onClick={handlePrevious}>Previous</button>
-        <button id="btn" onClick={handleNext}>Next</button>
+        <button id="btn" onClick={handlePrevious} disabled={currentImageIndex === 0}>Previous</button>
+        <button id="btn" onClick={handleNext} disabled={currentImageIndex === imageUrls.length - 1}>Next</button>
         <button id="btn" onClick={handleSave}>Save</button>
         <button id="btn" onClick={handleSubmit}>Submit</button>
       </div>

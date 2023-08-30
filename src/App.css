@@ -22,6 +22,11 @@ button {
   transition-property: color;
 }
 
+button[disabled]{
+  opacity: 0.5;
+  cursor: default;
+}
+
 button:focus,
 button:hover {
   color: #fff;
